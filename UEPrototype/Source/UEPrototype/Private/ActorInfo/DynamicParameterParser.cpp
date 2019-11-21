@@ -24,6 +24,9 @@ void UDynamicParameterParser::ParseMaterial(const UMaterialInstance * MaterialIn
 		return;
 	}
 
+
+	
+
 	/* 
 	   Scalar , LinearColor , Texture을 Map에 Parsing
 	   사용자는 변경하고 싶은 부분에 대해서 반드시 Edit창의 Parameter 값을 수정할 수 있도록
@@ -82,7 +85,7 @@ void UDynamicParameterParser::ParseParticleSystem( const UParticleSystemComponen
 			DynamicParamList.NameColorMap.Add(it.Name, it.Color);
 		}
 		
-		VP_LOG(Warning, TEXT("Parsing된 Parameter Name : %s"), *it.Name.ToString());
+		//VP_LOG(Warning, TEXT("Parsing된 Parameter Name : %s"), *it.Name.ToString());
 	}
 	
 

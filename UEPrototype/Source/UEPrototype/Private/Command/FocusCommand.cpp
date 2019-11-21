@@ -131,7 +131,7 @@ void UFocusCommand::ExecuteIf()
 	
 	for (const auto& it : Constraints)
 	{
-		// TODO : 모든 액터는 생성시 CSTR_None상태. 나중에 PlayerTaskManager 부분을 손 봐야할듯
+		// TODO : Target.TargetState의 첫 번째가 None에서 Unfocus로 변경되어 Target.TargetState== EActorConstraintState부분은 지워도 됨.
 		if (it->CheckConstraint(Target) == true || Target.TargetState == EActorConstraintState::CSTR_None)
 		{
 			ActorConstraintMarker->MarkActor(Target.Target, EActorConstraintState::CSTR_Focused);

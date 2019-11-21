@@ -21,7 +21,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FInteractedActorRemovedEventDispatch
  *	컬 전용으로, 네트워크 환경에서는 AEditorWorldManager의 BlockedAct
  *	or와 상호 통신 관계를 유지해야 합니다,
  */
-UCLASS()
+UCLASS(Blueprintable, BlueprintType)
 class UEPROTOTYPE_API UPlayerTaskManager : public UObject
 {
 	GENERATED_BODY()

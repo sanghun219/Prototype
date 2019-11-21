@@ -20,10 +20,10 @@ UEmitterCommandStart::UEmitterCommandStart()
 	if ((ActorConstraintMarker != nullptr && ActorConstraintMarker->IsValidLowLevel())
 		&& (VPEmitter != nullptr && VPEmitter->IsValidLowLevel()))
 	{
-		VP_LOG(Log, TEXT("SoundCommand의 멤버가 유효하다네요?"));
+		VP_LOG(Log, TEXT("EmitterCommand의 멤버가 유효하다네요?"));
 		return;
 	}
-	VP_LOG(Log, TEXT("SoundCommand의 멤버가 유효하지 않다네요?"));
+	VP_LOG(Log, TEXT("EmitterCommand의 멤버가 유효하지 않다네요?"));
 
 	/* 초기화하는 데 필요한 객체를 가지고 있는 모듈의 유효성을 검사합니다 */
 	UEditorModulesManager* EditorModulesManager =
